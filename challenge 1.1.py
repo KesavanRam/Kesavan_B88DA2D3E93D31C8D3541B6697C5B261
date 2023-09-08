@@ -3,13 +3,7 @@ def factorial(n):
     return n
   else:
     return n * factorial(n - 1)
-
-
 num = int(input("Enter any number: "))
+res=factorial(num)
+print(res)
 
-if num < 0:
-  print("Factorial does not exist")
-elif num == 0:
-  print("The factorial of 0 is 1")
-else:
-  print("The factorial of", num, "is", factorial(num))
